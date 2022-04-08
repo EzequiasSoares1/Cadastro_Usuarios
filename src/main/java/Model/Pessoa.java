@@ -49,7 +49,7 @@ public class Pessoa implements Serializable{
 	@Column(name = "BIRTHDATE")
 	private Date data;
 	
-	@Column(name = "Sexo", nullable = false)
+	@Column(name = "Sex", nullable = false)
 	@Enumerated(EnumType.STRING)
 	private Sexo sexo;
 	
