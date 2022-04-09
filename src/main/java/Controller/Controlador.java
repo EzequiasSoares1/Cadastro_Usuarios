@@ -25,8 +25,8 @@ public class Controlador {
 		return false;
 	}
 	
-	public Endereco CriarEn(String rua, String numero, String cep,String cidade,String estado,String referencia) {
-		return new Endereco(rua,numero,cep,cidade,estado,referencia);
+	public Endereco CriarEn(String rua, String numero, String cep,String cidade,String estado,String referencia,String pais) {
+		return new Endereco(rua,numero,cep,cidade,estado,referencia,pais);
 	}
 	
 	public Pessoa Buscar(String cpf) throws Exception {

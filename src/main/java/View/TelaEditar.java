@@ -76,7 +76,8 @@ public class TelaEditar extends TelaDeCadastro {
 						Controlador c = new Controlador();
 						if (c.Atualizar(getTNome().getText(), getTEmail().getText(), getTTelefone().getText(),
 								getTCpf().getText(), getData(), getGen(),
-								new Controlador().CriarEn(getTRua().getText(), getTNumero().getText(), getTCep().getText(), getTCidade().getText(),getTEstado().getText(),getTReferencia().getText()))) {
+								new Controlador().CriarEn(getTRua().getText(), getTNumero().getText(), getTCep().getText(), getTCidade().getText(),
+										getTEstado().getText(),getTReferencia().getText(), getTPais().getText()))) {
 							JOptionPane.showMessageDialog(null, "Atualizador com sucesso");
 						} else {
 							JOptionPane.showMessageDialog(null, "Verifique os campos");

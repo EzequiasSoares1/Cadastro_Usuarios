@@ -14,12 +14,14 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 import Dao.PessoaDAO;
 
 @Entity
+@Table(name = "TB_PERSON")
 public class Pessoa implements Serializable{
 
 	public Pessoa(String nome, String email, String tell ,String cpf,Date data,Sexo sexo, Endereco endereco) {

@@ -1,19 +1,11 @@
 package Model;
-
-import java.util.List;
-
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 @Entity(name = "Address")
-@Table(name = "TB_ENDERECO")
+@Table(name = "TB_ADDRESS")
 public class Endereco {
 	
 	@Id
@@ -25,20 +17,22 @@ public class Endereco {
     private String cidade;
     private String estado;
     private String PontoReferencia;
+    private String pais;
 
-	public Endereco(String rua, String numero, String cep,String cidade,String estado,String referencia) {
+	public Endereco(String rua, String numero, String cep,String cidade,String estado,String referencia,String pais) {
     	this.rua = rua;
     	this.numero = numero;
     	this.cep = cep;
     	this.cidade = cidade;
     	this.estado = estado;
     	this.PontoReferencia = referencia;
+    	this.pais = pais;
     }
     
     public Endereco() {
     	
     }
-
+  
 	public String getRua() {
 		return rua;
 	}
@@ -70,10 +64,10 @@ public class Endereco {
 		this.estado = estado;
 	}
 	public String getPais() {
-		return PontoReferencia;
+		return pais;
 	}
 	public void setPais(String pais) {
-		this.PontoReferencia = pais;
+		this.pais = pais;
 	} 
     public Long getId() {
 		return id;
