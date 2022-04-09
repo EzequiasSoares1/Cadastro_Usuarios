@@ -7,7 +7,6 @@ import javax.persistence.Table;
 @Entity(name = "Address")
 @Table(name = "TB_ADDRESS")
 public class Endereco {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Long id;
