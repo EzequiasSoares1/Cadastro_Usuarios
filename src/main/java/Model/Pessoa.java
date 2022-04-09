@@ -12,6 +12,7 @@ import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -53,8 +54,8 @@ public class Pessoa implements Serializable{
 	@Enumerated(EnumType.STRING)
 	private Sexo sexo;
 	
-	@ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
-	@JoinColumn(name = "ADDRESS_FK", nullable = false)
+	@OneToOne(fetch = FetchType.EAGER, cascade = {CascadeType.ALL}, orphanRemoval = true)
+	@JoinColumn(name = "ADDRESS_FK")
 	private Endereco endereco;
 	
 	public void CadastrarPessoa(Pessoa p) throws Exception {
