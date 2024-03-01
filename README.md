@@ -1,30 +1,29 @@
-# Formulario com Banco de Dados usando Hibernate e JPA
+# Form with Database using Hibernate and JPA
 
-Este é um pequeno projeto que demonstra o uso do Hibernate e da API JPA (Java Persistence API) para realizar operações de cadastro, consulta, alteração e exclusão de dados de usuários em um banco de dados.
+This is a small project that demonstrates the use of Hibernate and the JPA (Java Persistence API) to perform CRUD (Create, Read, Update, Delete) operations on user data in a database.
 
-## Requisitos
+## Requirements
 
-Antes de executar o programa, certifique-se de ter atendido aos seguintes requisitos:
+Before running the program, make sure you have met the following requirements:
 
-1. Tenha uma IDE instalada para facilitar a edição do arquivo `persistence.xml`.
-2. Configure a conexão com um banco de dados PostgreSQL no arquivo `persistence.xml`.
+1. Have an IDE installed to facilitate editing the `persistence.xml` file.
+2. Configure the connection to a PostgreSQL database in the `persistence.xml` file.
 
-## Funcionalidades
+## Features
 
-O projeto oferece as seguintes funcionalidades:
+The project offers the following features:
 
-- Cadastro de novos usuários.
-- Consulta de informações de usuários cadastrados.
-- Alteração de dados de um usuário existente.
-- Exclusão de um usuário do banco de dados.
+- Registration of new users.
+- Querying information of registered users.
+- Updating data of an existing user.
+- Deleting a user from the database.
 
-## Configuração do Banco de Dados
+## Database Configuration
 
-Para que o programa funcione corretamente, você deve editar o arquivo `persistence.xml` na sua IDE e configurar as informações de conexão com o banco de dados PostgreSQL, bem como as propriedades específicas do Hibernate.
+For the program to work correctly, you must edit the `persistence.xml` file in your IDE and configure the connection information to the PostgreSQL database, as well as the specific Hibernate properties.
 
-## Observação
+## Note
 
-Este projeto utiliza o Hibernate como ferramenta de mapeamento objeto-relacional e a API JPA para realizar as operações no banco de dados. Ele é um exemplo didático de como implementar um CRUD (Create, Read, Update, Delete) com essas tecnologias.
+This project uses Hibernate as an object-relational mapping tool and the JPA API to perform operations on the database. It is an educational example of how to implement CRUD operations with these technologies.
 
-
-**Observação:** Este projeto foi desenvolvido para fins educacionais e de aprendizado.
+**Note:** This project was developed for educational and learning purposes.
